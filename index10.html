@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Minesweeper</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73c36f1a62.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/10x10x10/style10.css"></link>
+    <link rel="stylesheet" href="src/10x10x10/dropdown10.css"></link>
+    <script src="src/10x10x10/app10.js" charset="utf-8"></script>
+</head>
+<body>
+   <div class="container">
+      <div class="text"><a href="">Minesweeper</a></div>
+      <nav>
+         <div class="drop-btn">
+           Levels <span class="fas fa-caret-down"></span>
+         </div>
+         <div class="tooltip"></div>
+         <div class="wrapper">
+           <ul class="menu-bar">
+             <li>
+               <a href="#">
+                 10x10x10
+               </a>
+             </li>
+             <li>
+               <a href="index16.html">
+                 16x16x40
+               </a>
+             </li>
+             <li>
+               <a href="index24.html">
+                 24x24x99
+               </a>
+             </li>
+         </div>
+       </nav>
+      <div class="grid"></div>
+      <div class="flag">Flags left: <span id='flags-left'></span></div>
+      <div id="result"></div>
+   </div>
+
+   <script>
+      const drop_btn = document.querySelector(".drop-btn span");
+      const tooltip = document.querySelector(".tooltip");
+      const menu_wrapper = document.querySelector(".wrapper");
+      const menu_bar = document.querySelector(".menu-bar");
+      const setting_drop = document.querySelector(".setting-drop");
+      const help_drop = document.querySelector(".help-drop");
+      const setting_item = document.querySelector(".setting-item");
+      const help_item = document.querySelector(".help-item");
+      const setting_btn = document.querySelector(".back-setting-btn");
+      const help_btn = document.querySelector(".back-help-btn");
+        drop_btn.onclick = (()=>{
+          menu_wrapper.classList.toggle("show");
+          tooltip.classList.toggle("show");
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #100F1A;
+}
+
+.container {
+    max-width: 1000px;
+    background: #1F1E33;
+    width: 1000px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    height: auto;
+    text-align: center;
+}
+.container .text {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(right, #FF99CC, #E0D753, #FF99CC, #E0D753);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#flags-left {
+  color: red;
+}
+
+.flag {
+  color: #D5D2EB;
+  font-size: 20px;
+}
+
+.grid {
+    height: 960px;
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #6D69B3;
+    margin: 70px 10px 0px 10px;
+    border: 10px solid #423e80;
+}
+
+/* .grid div {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    padding: 5px;
+} */
+
+/* .checked {
+    background-color: blue;
+}
+
+.bomb {
+    background-color: red;
+    color:blue;
+}
+
+
+ for the numbers 
+.valid {
+    color: peru;
+    font-family: 'Inconsolata', monospace;
+} */
+
+.valid {
+    height: 40px;
+    width: 40px;
+    border: 5px solid;
+    border-color: #CCC9FF #8784BF #8784BF #B4B0FF;
+    box-sizing: border-box;
+  }
+  
+  .checked {
+    height: 40px;
+    width: 40px;
+    border: 2px solid;
+    background-color: #151433;
+    border-color: #5A5880;
+    box-sizing: border-box;
+    font-size: 25px;
+  }
+  
+  .bomb {
+    height: 40px;
+    width: 40px;
+    border: 5px solid;
+    border-color: #CCC9FF #8784BF #8784BF #B4B0FF;
+    box-sizing: border-box;
+  }
+  
+  .one {
+    color: #49ABEB;
+  }
+  
+  .two {
+    color: #74EF57;
+  }
+  
+  .three {
+    color: #e74646;
+  }
+  
+  .four{
+    color: #E079F9;
+  }
+  
+  #result {
+    font-size: 30px;
+    color: #e76346;
+    margin-bottom: 10px;
+  }
+
+@media (max-width: 700px) {
+  .container .text {
+      font-size: 30px;
+  }
+}
